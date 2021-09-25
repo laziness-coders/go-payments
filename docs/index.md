@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Go-Payments official site
 
 You can use the [editor on GitHub](https://github.com/bos-hieu/go-payments/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
