@@ -7,6 +7,7 @@ import (
 var (
 	_ types.Client = (*paypal)(nil)
 )
+
 func NewClient() types.Client {
 	result := &paypal{}
 	return result
@@ -38,4 +39,3 @@ func (p paypal) Refund(request *types.RefundRequest) (response *types.RefundResp
 func (p paypal) GenerateToken() string {
 	panic("implement me")
 }
-

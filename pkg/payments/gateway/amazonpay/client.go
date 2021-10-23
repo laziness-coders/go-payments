@@ -13,7 +13,6 @@ func NewClient() types.Client {
 	return result
 }
 
-
 type amazonPay struct {
 }
 
@@ -40,4 +39,3 @@ func (a amazonPay) Refund(request *types.RefundRequest) (response *types.RefundR
 func (a amazonPay) GenerateToken() string {
 	panic("implement me")
 }
-

@@ -13,7 +13,6 @@ func NewClient() types.Client {
 	return result
 }
 
-
 type authorizeDotNet struct {
 }
 
@@ -40,4 +39,3 @@ func (a authorizeDotNet) Refund(request *types.RefundRequest) (response *types.R
 func (a authorizeDotNet) GenerateToken() string {
 	panic("implement me")
 }
-

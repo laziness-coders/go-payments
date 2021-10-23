@@ -18,9 +18,7 @@ type Amount struct {
 }
 
 type CreditCard struct {
-
 }
 
 type AdditionalData struct {
-
 }

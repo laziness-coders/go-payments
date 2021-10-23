@@ -39,4 +39,3 @@ func (a applePay) Refund(request *types.RefundRequest) (response *types.RefundRe
 func (a applePay) GenerateToken() string {
 	panic("implement me")
 }
-

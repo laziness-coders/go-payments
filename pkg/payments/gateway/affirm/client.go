@@ -13,7 +13,6 @@ func NewClient() types.Client {
 	return result
 }
 
-
 type affirm struct {
 }
 
@@ -40,4 +39,3 @@ func (a affirm) Refund(request *types.RefundRequest) (response *types.RefundResp
 func (a affirm) GenerateToken() string {
 	panic("implement me")
 }
-

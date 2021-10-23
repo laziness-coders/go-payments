@@ -34,4 +34,3 @@ func (a adyen) Refund(request *types.RefundRequest) (response *types.RefundRespo
 func (a adyen) GenerateToken() string {
 	panic("implement me")
 }
-

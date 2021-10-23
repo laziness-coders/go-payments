@@ -39,4 +39,3 @@ func (c checkout) Refund(request *types.RefundRequest) (response *types.RefundRe
 func (c checkout) GenerateToken() string {
 	panic("implement me")
 }
-
