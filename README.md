@@ -6,3 +6,4 @@ The payment methods will be supported includes adyen, checkout.com, paypal, goog
 
 ## References
 - https://medium.com/@eduardoenriquez/building-a-payment-service-bus-using-golang-be3fe8806434
+- https://github.com/BoltApp/sleet

@@ -1,4 +1,4 @@
-package paymentmethod
+package paymentgateway
 
 const (
 	Adyen = iota + 1
