@@ -15,23 +15,23 @@ func NewClient() types.Client {
 type paypal struct {
 }
 
-func (p paypal) Authorize(request *payments.AuthorizeRequest) (response *payments.AuthoriseResponse, err error) {
+func (p paypal) Authorize(request *types.AuthorizeRequest) (response *types.AuthoriseResponse, err error) {
 	panic("implement me")
 }
 
-func (p paypal) Capture(request *payments.CaptureRequest) (response *payments.CaptureResponse, err error) {
+func (p paypal) Capture(request *types.CaptureRequest) (response *types.CaptureResponse, err error) {
 	panic("implement me")
 }
 
-func (p paypal) Void(request *payments.VoidRequest) (response *payments.VoidResponse, err error) {
+func (p paypal) Void(request *types.VoidRequest) (response *types.VoidResponse, err error) {
 	panic("implement me")
 }
 
-func (p paypal) Cancel(request *payments.CancelRequest) (response *payments.CancelResponse, err error) {
+func (p paypal) Cancel(request *types.CancelRequest) (response *types.CancelResponse, err error) {
 	panic("implement me")
 }
 
-func (p paypal) Refund(request *payments.RefundRequest) (response *payments.RefundResponse, err error) {
+func (p paypal) Refund(request *types.RefundRequest) (response *types.RefundResponse, err error) {
 	panic("implement me")
 }
 
