@@ -23,7 +23,7 @@ func NewClient(gateway int) payments.Client {
 
 func HandleClient() {
 	client := NewClient(paymentgateway.Adyen)
-	_, err := client.Authorize(&payments.PaymentRequest{})
+	_, err := client.Authorize(&payments.AuthorizeRequest{})
 	if err != nil {
 
 	}
