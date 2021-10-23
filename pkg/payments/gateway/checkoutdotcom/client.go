@@ -1,12 +1,14 @@
 package checkoutdotcom
 
-import "github.com/bos-hieu/go-payments/pkg/payments"
-
-var (
-	_ payments.Client = (*checkout)(nil)
+import (
+	"github.com/bos-hieu/go-payments/pkg/payments/types"
 )
 
-func NewClient() payments.Client {
+var (
+	_ types.Client = (*checkout)(nil)
+)
+
+func NewClient() types.Client {
 	result := &checkout{}
 	return result
 }

@@ -1,11 +1,13 @@
 package paypal
 
-import "github.com/bos-hieu/go-payments/pkg/payments"
+import (
+	"github.com/bos-hieu/go-payments/pkg/payments/types"
+)
 
 var (
-	_ payments.Client = (*paypal)(nil)
+	_ types.Client = (*paypal)(nil)
 )
-func NewClient() payments.Client {
+func NewClient() types.Client {
 	result := &paypal{}
 	return result
 }

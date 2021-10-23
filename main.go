@@ -1,14 +1,14 @@
 package gopayments
 
 import (
-	"github.com/bos-hieu/go-payments/pkg/payments"
 	"github.com/bos-hieu/go-payments/pkg/payments/constants/paymentgateway"
 	"github.com/bos-hieu/go-payments/pkg/payments/gateway/adyen"
 	"github.com/bos-hieu/go-payments/pkg/payments/gateway/amazonpay"
 	"github.com/bos-hieu/go-payments/pkg/payments/gateway/paypal"
+	"github.com/bos-hieu/go-payments/pkg/payments/types"
 )
 
-func NewClient(gateway int) payments.Client {
+func NewClient(gateway int) types.Client {
 	switch gateway {
 	case paymentgateway.Adyen:
 		return adyen.NewClient()
@@ -23,7 +23,7 @@ func NewClient(gateway int) payments.Client {
 
 func HandleClient() {
 	client := NewClient(paymentgateway.Adyen)
-	_, err := client.Authorize(&payments.AuthorizeRequest{})
+	_, err := client.Authorize(&types.AuthorizeRequest{})
 	if err != nil {
 
 	}

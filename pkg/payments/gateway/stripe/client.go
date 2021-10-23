@@ -1,12 +1,12 @@
 package stripe
 
-import "github.com/bos-hieu/go-payments/pkg/payments"
+import "github.com/bos-hieu/go-payments/pkg/payments/types"
 
 var (
-	_ payments.Client = (*stripe)(nil)
+	_ types.Client = (*stripe)(nil)
 )
 
-func NewClient() payments.Client {
+func NewClient() types.Client {
 	result := &stripe{}
 	return result
 }
@@ -14,23 +14,23 @@ func NewClient() payments.Client {
 type stripe struct {
 }
 
-func (s stripe) Authorize(request *payments.AuthorizeRequest) (response *payments.AuthoriseResponse, err error) {
+func (s stripe) Authorize(request *types.AuthorizeRequest) (response *types.AuthoriseResponse, err error) {
 	panic("implement me")
 }
 
-func (s stripe) Capture(request *payments.CaptureRequest) (response *payments.CaptureResponse, err error) {
+func (s stripe) Capture(request *types.CaptureRequest) (response *types.CaptureResponse, err error) {
 	panic("implement me")
 }
 
-func (s stripe) Void(request *payments.VoidRequest) (response *payments.VoidResponse, err error) {
+func (s stripe) Void(request *types.VoidRequest) (response *types.VoidResponse, err error) {
 	panic("implement me")
 }
 
-func (s stripe) Cancel(request *payments.CancelRequest) (response *payments.CancelResponse, err error) {
+func (s stripe) Cancel(request *types.CancelRequest) (response *types.CancelResponse, err error) {
 	panic("implement me")
 }
 
-func (s stripe) Refund(request *payments.RefundRequest) (response *payments.RefundResponse, err error) {
+func (s stripe) Refund(request *types.RefundRequest) (response *types.RefundResponse, err error) {
 	panic("implement me")
 }
 

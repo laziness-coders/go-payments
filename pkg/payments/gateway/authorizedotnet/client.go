@@ -1,12 +1,14 @@
 package authorizedotnet
 
-import "github.com/bos-hieu/go-payments/pkg/payments"
-
-var (
-	_ payments.Client = (*authorizeDotNet)(nil)
+import (
+	"github.com/bos-hieu/go-payments/pkg/payments/types"
 )
 
-func NewClient() payments.Client {
+var (
+	_ types.Client = (*authorizeDotNet)(nil)
+)
+
+func NewClient() types.Client {
 	result := &authorizeDotNet{}
 	return result
 }

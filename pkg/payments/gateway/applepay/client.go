@@ -1,12 +1,14 @@
 package applepay
 
-import "github.com/bos-hieu/go-payments/pkg/payments"
-
-var (
-	_ payments.Client = (*applePay)(nil)
+import (
+	"github.com/bos-hieu/go-payments/pkg/payments/types"
 )
 
-func NewClient() payments.Client {
+var (
+	_ types.Client = (*applePay)(nil)
+)
+
+func NewClient() types.Client {
 	result := &applePay{}
 	return result
 }

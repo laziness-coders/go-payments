@@ -1,9 +1,11 @@
 package googlepay
 
-import "github.com/bos-hieu/go-payments/pkg/payments"
+import (
+	"github.com/bos-hieu/go-payments/pkg/payments/types"
+)
 
 var (
-	_ payments.Client = (*adyen)(nil)
+	_ types.Client = (*adyen)(nil)
 )
 
 type adyen struct {

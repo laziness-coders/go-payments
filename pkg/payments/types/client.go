@@ -1,4 +1,4 @@
-package payments
+package types
 
 type Gateway interface {
 	GetType() int
@@ -10,12 +10,6 @@ type PaymentRequest struct {
 
 // PaymentResponse is a contract to define the response from payment gateways
 type PaymentResponse struct {
-}
-
-type AuthorizeRequest struct {
-}
-
-type AuthoriseResponse struct {
 }
 
 type CaptureRequest struct {
@@ -40,31 +34,6 @@ type RefundRequest struct {
 }
 
 type RefundResponse struct {
-}
-
-type Address struct {
-	City              string `json:"city"`
-	Country           string `json:"country"`
-	HouseNumberOrName string `json:"houseNumberOrName"`
-	PostalCode        string `json:"postalCode"`
-	StateOrProvince   string `json:"stateOrProvince"`
-	Street            string `json:"street"`
-}
-
-type BillingAddress Address
-type ShippingAddress Address
-
-type Amount struct {
-	Value    int    `json:"value"`
-	Currency string `json:"currency"`
-}
-
-type CreditCard struct {
-
-}
-
-type AdditionalData struct {
-
 }
 
 type Mandate struct {
